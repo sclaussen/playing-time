@@ -8,6 +8,10 @@ opportunities in the game for wholesale substitutions and the youth
 sports league requires equal playing time:
 
 ```
+$ node index.js "Caden Roy Bryant Koki Naoki Eddie Declan Anthony Andersen" 4
+```
+
+```
 $ node index.js "Caden Jordan Landon Kai Evan Hayato Leandro" 8
 1: Caden Evan Hayato Jordan Kai (Out: Landon Leandro)
 2: Landon Leandro Caden Evan Hayato (Out: Jordan Kai)

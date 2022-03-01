@@ -32,6 +32,7 @@ var segments = [];
 
 
 // Tests
+// node index.js "Caden Roy Bryant Anthony Naoki Koki Declan Eddie Andersen" 4
 // node index.js "P01 P02 P03 P04 P05" 4
 // node index.js "P01 P02 P03 P04 P05" 8
 // node index.js "P01 P02 P03 P04 P05 P06" 4
@@ -88,7 +89,7 @@ function initializePlayers(playerNames) {
         });
     }
 
-    players = _.orderBy(players, [ 'name' ], [ 'asc' ]);
+    // players = _.orderBy(players, [ 'name' ], [ 'asc' ]);
 }
 
 
@@ -171,7 +172,8 @@ function printPlayerSegmentMatrix() {
     console.log();
 
     // Players
-    for (let player of _.orderBy(players, [ 'name' ], [ 'asc' ])) {
+    // for (let player of _.orderBy(players, [ 'name' ], [ 'asc' ])) {
+    for (let player of players) {
         process.stdout.write(player.name.substring(0, maxNameLength).padEnd(maxNameLength))
         for (let status of player.segmentStatus) {
             if (_.values(status)[0] === 'in') {
