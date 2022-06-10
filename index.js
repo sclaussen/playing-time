@@ -141,8 +141,9 @@ function processSegment(segment) {
 
 
 function printBySegment() {
+    console.log()
     for (let segment of segments) {
-        process.stdout.write(segment.name + ': ');
+        process.stdout.write('  ' + segment.name + ': ');
         for (let player of segment.in) {
             process.stdout.write(player + ' ');
         }
@@ -165,7 +166,7 @@ function printPlayerSegmentMatrix() {
     const horizontalWhitespace = 1;
 
     // Header
-    process.stdout.write(' '.padEnd(maxNameLength));
+    process.stdout.write('  ' + ' '.padEnd(maxNameLength + 4));
     for (let segment of segments) {
         process.stdout.write(segment.name + ' '.padEnd(horizontalWhitespace));
     }
@@ -174,7 +175,7 @@ function printPlayerSegmentMatrix() {
     // Players
     // for (let player of _.orderBy(players, [ 'name' ], [ 'asc' ])) {
     for (let player of players) {
-        process.stdout.write(player.name.substring(0, maxNameLength).padEnd(maxNameLength))
+        process.stdout.write('  ' + player.name.substring(0, maxNameLength + 4).padEnd(maxNameLength + 4))
         for (let status of player.segmentStatus) {
             if (_.values(status)[0] === 'in') {
                 process.stdout.write('X' + ' '.padEnd(horizontalWhitespace));

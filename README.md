@@ -8,7 +8,7 @@ opportunities in the game for wholesale substitutions and the youth
 sports league requires equal playing time:
 
 ```
-$ node index.js "Caden Roy Bryant Koki Naoki Eddie Declan Anthony Andersen" 4
+$ node index.js "Anthony Caden Andersen Roy Eddie Naoki Declan Max" 4
 ```
 
 ```
@@ -21,13 +21,40 @@ $ node index.js "Caden Jordan Landon Kai Evan Hayato Leandro" 8
 6: Kai Landon Leandro Caden Evan (Out: Hayato Jordan)
 7: Hayato Jordan Kai Landon Leandro (Out: Caden Evan)
 8: Caden Evan Hayato Jordan Kai (Out: Landon Leandro)
-
-          1 2 3 4 5 6 7 8
-Caden     X X X   X X   X  6
-Evan      X X   X X X   X  6
-Hayato    X X   X X   X X  6
-Jordan    X   X X X   X X  6
-Kai       X   X X   X X X  6
-Landon      X X X   X X    5
-Leandro     X X   X X X    5
 ```
+
+Defense: Anthony wing, Eddie forward, or vice versa
+
+
+
+                  1-Guard    2-Guard      3-Forward   4-Forward   5-Center
+    Game 1 Q1 A:  Naoki(W)   Anthony(W)   Caden(F)    Roy(P)      Andersen(F)
+    Game 1 Q2 A:  Max(W)     Anthony(W)   Caden(P)    Eddie(F)    Declan(F)
+    Game 1 Q3 A:  Max(W)     Eddie(W)     Roy(P)      Declan(F)   Andersen(F)
+    Game 1 Q4 A:  Naoki(W)   Anthony(W)   Caden(F)    Roy(P)      Eddie(F)
+    Game 1 Q4 B:  Naoki(W)   Eddie(W)     Anthony(F)  Roy(P)      Andersen(F)
+
+
+
+                  1-Guard    2-Guard      3-Forward   4-Forward   5-Center
+    Game 2 Q1 A:  Naoki(W)   Anthony(W)   Roy(P)      Declan(F)   Andersen(F)
+    Game 2 Q2 A:  Max(W)     Anthony(W)   Caden(P)    Declan(F)   Andersen(F)
+    Game 2 Q3 A:  Max(W)     Caden(F)     Roy(P)      Naoki(W)    Declan(F)
+    Game 2 Q4 A:  Naoki(W)   Anthony(W)   Caden(F)    Roy(P)      Andersen(F)
+    Game 2 Q4 B:  Naoki(W)   Anthony(W)   Roy(P)      Max(F)      Andersen(F)
+
+
+  Pregame
+  - Sportsmanship
+  - Masks
+  - Inbound defense (Andersen on ball down low)
+  - Inbound play (DRAW)
+  - #2 guard always throwing the ball in
+  - Half court break (DRAW)
+  - #3/#4 position & pick & roll (DRAW)
+  - Anthony play left (of Roy) wing
+  - Box out
+  - Red
+
+  Half Time
+  - Full court press O/D
